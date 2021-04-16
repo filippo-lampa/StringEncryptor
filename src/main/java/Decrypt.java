@@ -18,8 +18,8 @@ public class Decrypt {
         int i=0;
         int j=0;
         while(i<this.charactersInfo.length){
-            char currentChar = (char)Integer.parseInt(bigIntToString.substring(j,(j+charactersInfo[i].codeLength)));
-            j=j+charactersInfo[i].codeLength;
+            char currentChar = (char)Integer.parseInt(bigIntToString.substring(j,(j+charactersInfo[i].getCodeLength())));
+            j=j+charactersInfo[i].getCodeLength();
             i++;
             if (currentChar == '/'){
                 builder.append(" ");
